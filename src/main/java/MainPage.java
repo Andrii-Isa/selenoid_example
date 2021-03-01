@@ -1,9 +1,10 @@
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 
 public class MainPage {
 
     public static MainPage open() {
-        Selenide.open("https://yandex.ru/");
+        Selenide.open("https://google.com.ua");
         return new MainPage();
     }
 }

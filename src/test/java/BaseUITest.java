@@ -1,12 +1,13 @@
 import com.codeborne.selenide.Configuration;
+import org.apache.log4j.BasicConfigurator;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseUITest {
 
     @BeforeSuite
     public void setUp() {
-
-        Configuration.baseUrl = "https://yandex.ru/";
+        BasicConfigurator.configure();
+        Configuration.baseUrl = "https://google.com.ua/";
         Configuration.browser = "SelenoidDriverProvider";
         Configuration.timeout = 10000;
         Configuration.browserSize = "1600x1400";

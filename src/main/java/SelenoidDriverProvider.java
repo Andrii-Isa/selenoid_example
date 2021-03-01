@@ -14,14 +14,14 @@ public class SelenoidDriverProvider implements WebDriverProvider {
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName("chrome");
-        capabilities.setVersion("80.0");
+        capabilities.setVersion("87.0");
         capabilities.setPlatform(Platform.LINUX);
         capabilities.setCapability("enableVNC", true);
 //        browser.setCapability("screenResolution", "680x124x24"); // размер экрана
 
         try {
             RemoteWebDriver driver = new RemoteWebDriver(
-                    URI.create("http://161.35.78.225:4444/wd/hub").toURL(),
+                    URI.create("http://164.90.164.197:4444/wd/hub").toURL(),
                     capabilities
             );
 //            driver.manage().window().setSize(new Dimension(1280, 1024)); ставить в селениде
