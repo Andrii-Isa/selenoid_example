@@ -1,0 +1,14 @@
+node{
+     stage ("checkout repo"){
+            git branch: 'master'
+            url: 'https://github.com/Andrii-Isa/selenoid_example.git'
+     }
+
+     stage ("build"){
+            sh "./gradlew clean: selenoid-example:assemble"
+     }
+
+     stage ("run Selenoid tests"){
+            sh "./gradlew selenoid-example:test"
+     }
+ }
