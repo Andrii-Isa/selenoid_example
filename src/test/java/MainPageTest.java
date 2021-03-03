@@ -9,9 +9,11 @@ public class MainPageTest extends BaseUITest {
 
     @Test
     public void testName() throws InterruptedException {
-        MainPage.open();
+        mainPage.open()
+                .fillInText();
+
         Thread.sleep(5000);
-        $(".gLFyf.gsfi").shouldHave(appear).setValue("text");
+
         Thread.sleep(5000);
     }
 }

@@ -11,9 +11,7 @@ public class BaseUITest {
         Configuration.browser = "SelenoidDriverProvider";
         Configuration.timeout = 10000;
         Configuration.browserSize = "1600x1400";
-
-
     }
 
-
+    protected LoginPage mainPage;
 }
