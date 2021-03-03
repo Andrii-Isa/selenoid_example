@@ -7,6 +7,6 @@ node{
 
 
      stage ("run Selenoid tests"){
-            sh "./gradlew selenoid-example:test"
+            sh "./gradlew selenoid_example:test"
      }
  }

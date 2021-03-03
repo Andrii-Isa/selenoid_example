@@ -13,5 +13,5 @@ public class BaseUITest {
         Configuration.browserSize = "1600x1400";
     }
 
-    protected LoginPage mainPage;
+    protected LoginPage mainPage = new LoginPage();
 }
