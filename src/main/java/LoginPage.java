@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class LoginPage extends MainPage<LoginPage> {
 
     private final String loginField = ".gLFyf.gsfi";
-    
+
     public LoginPage open() {
         Selenide.open("https://google.com.ua");
         return this;
