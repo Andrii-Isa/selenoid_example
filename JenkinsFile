@@ -4,11 +4,14 @@ node{
             url: 'https://github.com/Andrii-Isa/selenoid_example.git'
      }
 
-stage ("build") {
-    sh './gradlew build'
-  }
+     stage ("build") {
+         steps {
+            sh 'gradlew build'
+         }
+     }
 
      stage ("run Selenoid tests"){
-            sh "./gradlew test"
+         steps {
+             sh 'gradlew test'
+         }
      }
- }
