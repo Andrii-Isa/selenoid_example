@@ -6,13 +6,13 @@ node{
 
      stage ("build") {
          steps {
-            sh './gradlew build'
+            sh "./gradlew build"
          }
      }
 
      stage ("run Selenoid tests"){
          steps {
-             sh './gradlew test'
+             sh "./gradlew test"
          }
      }
  }
