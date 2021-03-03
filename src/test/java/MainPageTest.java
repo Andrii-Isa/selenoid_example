@@ -1,19 +1,15 @@
+import com.codeborne.selenide.Selenide;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Condition.appear;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.*;
 
 public class MainPageTest extends BaseUITest {
 
-
     @Test
-    public void testName() throws InterruptedException {
+    public void testName() {
         mainPage.open()
                 .fillInText();
-
-        Thread.sleep(5000);
-
-        Thread.sleep(5000);
+        Selenide.sleep(5000);
     }
 }

@@ -11,4 +11,12 @@ node{
      stage ("run Selenoid tests"){
           sh "./gradlew test"
      }
+
+      allure([
+                     includeProperties: false,
+                     jdk: '',
+                     properties: [],
+                     reportBuildPolicy: 'ALWAYS',
+                     results: [[path: 'target/allure-results']]
+                   ])
  }
