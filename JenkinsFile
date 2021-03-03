@@ -5,10 +5,10 @@ node{
      }
 
      stage ("clean") {
-          sh "./gradlew clean assemble"
+          sh "gradlew clean assemble"
      }
 
      stage ("run Selenoid tests"){
-          sh "./gradlew test"
+          sh "gradlew test"
      }
  }
