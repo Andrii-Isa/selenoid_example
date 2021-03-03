@@ -1,6 +1,6 @@
 node{
      stage ("checkout repo"){
-            git branch: 'master'
+            git branch: 'master',
             url: 'https://github.com/Andrii-Isa/selenoid_example.git'
      }
 
